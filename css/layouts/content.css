@@ -145,13 +145,43 @@ table.table .link-button {
 
 table.table td:has(.link-button) {
   display: flex;
+  position: relative;
+  border-top: none;
+  border-left: none;
 }
 
-table.table td:has(.link-button) .icon {
+table.table td:has(.link-button) .menu {
+  padding: 5px;
+}
+table.table td:has(.link-button) .menu:hover {
+  cursor: pointer;
+}
+table.table td:has(.link-button) .menu:hover .menu__list {
+  cursor: pointer;
+  display: block;
+}
+
+table.table td:has(.link-button) .menu .icon {
   background: url("/Resource/img/Sprites.64af8f61.svg") no-repeat -564px -365px;
   width: 8px;
   height: 5px;
-  position: relative;
-  top: 0px;
-  left: -10px;
+}
+
+div.menu__list {
+  display: none;
+  position: absolute;
+  top: 38px;
+  left: 12px;
+  background-color: white;
+  border: 1px var(--border-input-color) solid;
+  z-index: 99;
+}
+
+div.menu__list > div {
+  padding: 5px;
+}
+div.menu__list > div:hover {
+  cursor: pointer;
+  color: var(--color-light-green-500);
+  background-color: var(--border-input-color);
 }
