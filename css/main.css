@@ -1,0 +1,40 @@
+@import url(/css/components/button.css);
+@import url(/css/components/combobox.css);
+@import url(/css/components/popup.css);
+@import url(/css/components/table.css);
+@import url(/css/components/textfield.css);
+@import url(/css/components/toastmessage.css);
+@import url(/css/layouts/content.css);
+@import url(/css/layouts/header.css);
+@import url(/css/layouts/nav.css);
+
+body {
+  font-family: Misa font;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 13px;
+}
+
+@font-face {
+  font-family: "Misa font";
+  src: url(/assets/font/Roboto/Roboto-Regular.ttf);
+}
+
+:root {
+  --border-radius: 4px;
+  --color-light-green-500: #50b83c;
+  --color-light-green-600: #409330;
+  --color-light-green-300: #6bc18d;
+  --color-light-green-200: #9cd5b3;
+  --color-light-green-100: #ceead9;
+  --color-background-icon-button: rgba(80, 184, 60, 0.1);
+  --color-primary: #007aff;
+
+  --border-color: #ccc;
+  --border-color-hover: #007aff;
+  --height-primary: 36px;
+  --border-input-color: #e6e6e6;
+}

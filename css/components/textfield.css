@@ -1,0 +1,69 @@
+.input {
+  width: 175px;
+  height: 41px;
+}
+
+.input__label {
+  font-size: 9px;
+  text-align: left;
+}
+
+.input__text {
+  border-radius: var(--border-radius);
+  display: flex;
+  width: 175px;
+  height: 24px;
+  align-items: center;
+  background-color: var(--border-input-color);
+  padding: auto;
+  margin-top: 6px;
+}
+
+.input__text--field {
+  border-bottom-left-radius: var(--border-radius);
+  border-top-left-radius: var(--border-radius);
+  border: unset;
+  width: 132px;
+  height: 8px;
+  font-weight: 400;
+  font-size: 8px;
+  margin-left: 1px;
+  padding: 7px 8px;
+  outline: 0px;
+}
+
+.input__text--icon {
+  background-color: var(--border-input-color);
+  width: 25px;
+  height: 22px;
+  border-bottom-right-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+.input__text--icon > img {
+  width: 16px;
+  height: 16px;
+  margin: 3px 6px;
+}
+
+.input-verifying .input__text--icon {
+  background-color: #ffffff;
+}
+
+.input-verifying .input__text {
+  background-color: var(--color-light-green-500);
+}
+
+.rotate {
+  animation: rotation 4s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

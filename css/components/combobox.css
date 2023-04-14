@@ -1,0 +1,46 @@
+label {
+  width: 326px;
+}
+
+.combobox {
+  position: relative;
+}
+
+.combobox .icon-button {
+  position: absolute;
+  top: 26px;
+  left: 284px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  border-left: 1px solid #e6e6e6;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.combobox .icon-button .icon-arrow-down {
+  border-color: #000;
+}
+
+.combobox .icon-button:hover {
+  cursor: pointer;
+}
+
+.combobox__menu {
+  display: none;
+  width: 318px;
+  padding: 4px;
+  border-radius: var(--border-radius);
+  box-shadow: 0px 7px 8px 1px gray;
+}
+
+.combobox__menu > .city {
+  padding: 10.5px;
+  border-radius: var(--border-radius);
+}
+
+.combobox__menu > .city:hover {
+  background-color: var(--color-light-green-200);
+}
+
+.combobox label:hover .combobox__menu {
+  display: block;
+}

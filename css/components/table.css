@@ -1,0 +1,28 @@
+table,
+th,
+td {
+  border: 1px #e0e0e0 solid;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 14px;
+}
+
+th {
+  background-color: #eeeeee;
+}
+
+.table__row:hover {
+  background-color: #eeeeee;
+}
+
+.table__footer > .table__data > div {
+  display: inline-block;
+  margin: 0px 20px 0px 10px;
+}
+
+.table__recordnumber {
+  float: right;
+}
