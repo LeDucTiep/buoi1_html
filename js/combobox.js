@@ -1,5 +1,13 @@
 let ClickCityEventHandler = (event) => {
-    document.getElementsByClassName("combobox__input")[0].value = event.srcElement.outerText;
+    document.getElementsByClassName("input__text--field")[0].value = event.srcElement.outerText;
+
+    let citys = document.getElementsByClassName("city");
+
+    for (let index = 0; index < citys.length; index++) {
+        citys[index].getElementsByClassName("combobox__menu--icon-checked")[0].style.visibility = "hidden";
+    }
+
+    event.srcElement.getElementsByClassName("combobox__menu--icon-checked")[0].style.visibility = 'visible';
 };
 
 let citys = document.getElementsByClassName("combobox__menu")[0]

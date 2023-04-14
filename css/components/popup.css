@@ -54,6 +54,11 @@ span.required {
 .popup__text--field {
   width: 280px;
   height: 36px;
+  padding-left: 16px;
+  border-color: var(--border-input-color);
+  border-radius: var(--border-radius);
+  outline: 0px;
+  border-style: solid;
 }
 
 .popup__text label {

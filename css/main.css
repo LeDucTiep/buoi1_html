@@ -30,6 +30,9 @@ body {
   --color-light-green-300: #6bc18d;
   --color-light-green-200: #9cd5b3;
   --color-light-green-100: #ceead9;
+  --color-light-green-50: #eef8ec;
+
+  --color-grey-400: #bdbdbd;
   --color-background-icon-button: rgba(80, 184, 60, 0.1);
   --color-primary: #007aff;
 

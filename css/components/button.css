@@ -13,8 +13,6 @@
 button.main-button,
 button.icon-button,
 button.extra-button,
-button.button-with-icon,
-button.combo-button,
 button.link-button {
   border: none;
   display: block;
@@ -25,6 +23,8 @@ button.link-button {
   color: #fff;
 }
 
+.button-with-icon:hover .icon-button,
+.button-with-icon:hover .main-button,
 .main-button:hover,
 .combo-button .icon-button:hover,
 .button-with-icon .main-button:hover,
@@ -33,28 +33,75 @@ button.link-button {
   background-color: #57c841;
   cursor: pointer;
 }
+.icon-button:hover {
+  cursor: pointer;
+}
+
+.link-button:hover {
+  cursor: pointer;
+}
+
+.link-button:active {
+  color: var(--color-light-green-600);
+  cursor: pointer;
+}
+
+.extra-button:active {
+  background-color: var(--color-grey-400);
+  cursor: pointer;
+}
+
+.icon-button:active:not(:disabled),
 .main-button:active,
 .combo-button .icon-button:active,
 .button .button-with-icon:active .main-button,
 .button .button-with-icon:active .icon-button,
-button.button-with-icon:active .main-button,
-button.button-with-icon:active .icon-button,
+div.button-with-icon:active .main-button,
+div.button-with-icon:active .icon-button,
 .button .icon-button:has(.icon-arrow-down):active {
   background-color: var(--color-light-green-600);
   cursor: pointer;
 }
 
-.button-with-icon:hover .icon-button,
-.button-with-icon:hover .main-button {
-  background-color: #57c841;
-  cursor: pointer;
+.icon-button:active:not(:disabled) .icon-plus {
+  --color: white;
 }
 
 .main-button:disabled,
-.main-button[disabled],
-.extra-button:disabled,
-.extra-button[disabled] {
+.main-button[disabled] {
   background-color: var(--color-light-green-200);
+  cursor: default;
+}
+.extra-button:disabled,
+.extra-button[disabled],
+.extra-button:disabled:hover,
+.extra-button[disabled]:hover {
+  color: var(--color-grey-400);
+  cursor: default;
+  border: none;
+}
+
+.link-button:disabled,
+.link-button[disabled],
+.link-button:disabled:hover,
+.link-button[disabled]:hover {
+  color: var(--color-light-green-200);
+  cursor: default;
+}
+
+.icon-button:disabled,
+.icon-button[disabled],
+.icon-button:disabled:hover,
+.icon-button[disabled]:hover {
+  color: var(--color-light-green-50);
+  cursor: default;
+}
+
+.icon-button:disabled .icon-plus,
+.icon-button[disabled] .icon-plus,
+.icon-button:disabled:hover .icon-plus,
+.icon-button[disabled]:hover .icon-plus {
+  --color: var(--color-light-green-200);
 }
 
 .extra-button {
@@ -116,7 +163,8 @@ button.button-with-icon:active .icon-button,
   position: relative;
   top: -1.25px;
   left: -1.25px;
-  border: solid #fff;
+  --border-color: #fff;
+  border: solid var(--border-color);
   border-width: 0 2px 2px 0;
   display: inline-block;
   padding: 3.5px;

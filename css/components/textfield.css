@@ -67,3 +67,8 @@
     transform: rotate(359deg);
   }
 }
+
+.input__text:not(:has(.input__text--icon)) .input__text--field {
+  width: calc(100% - 18px);
+  border-radius: var(--border-radius);
+}
