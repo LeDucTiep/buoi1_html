@@ -1,26 +1,29 @@
-table,
-th,
-td {
+table.table,
+.table th,
+.table td {
   border: 1px #e0e0e0 solid;
   border-collapse: collapse;
 }
 
-td,
-th {
+.table td,
+.table th {
   padding: 14px;
 }
 
-th {
+.table th {
   background-color: #eeeeee;
 }
 
-.table__row:hover {
+.table tr:hover {
   background-color: #eeeeee;
 }
-
-.table__footer > .table__data > div {
+.table__footer {
+  padding: 0px;
+}
+.table__footer > div {
   display: inline-block;
   margin: 0px 20px 0px 10px;
+  padding: 0px;
 }
 
 .table__recordnumber {

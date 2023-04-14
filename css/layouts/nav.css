@@ -1,0 +1,130 @@
+.container {
+  display: flex;
+  --nav-width: 132px;
+  font-size: 13px;
+}
+
+.nav {
+  background-color: #393a3e;
+  color: white;
+  height: 100vh;
+}
+
+.nav .nav__header {
+  display: flex;
+  width: var(--nav-width);
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 15px 10px 15px;
+}
+
+.nav .nav__header .icon:nth-child(1) {
+  background: url("/Resource/img/Sprites.64af8f61.svg") no-repeat -428px -92px;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.nav .nav__header img {
+  margin-right: 2px;
+}
+.nav .nav__body > .nav__body--category {
+  display: flex;
+  padding: 12px;
+  align-items: center;
+}
+
+.nav .nav__body > .nav__body--category > .icon {
+  margin-right: 6px;
+  margin-left: 6px;
+}
+
+.nav .nav__body > .nav__body--category:nth-child(1) > .icon {
+  background: url("/Resource/img/Sprites.64af8f61.svg") no-repeat -33px -1587px;
+  width: 18px;
+  height: 20px;
+}
+
+.nav .nav__body > .nav__body--category:nth-child(2) > .icon {
+  background: url("/Resource/img/Sprites.64af8f61.svg") no-repeat -78px -1588px;
+  width: 14px;
+  height: 19px;
+}
+
+.nav .nav__body > .nav__body--category:nth-child(3) > .icon {
+  background: url("/Resource/img/Sprites.64af8f61.svg") no-repeat -121px -1590px;
+  width: 16px;
+  height: 16px;
+}
+
+.nav .nav__body > .nav__body--category:nth-child(4) > .icon {
+  background: url("/Resource/img/Sprites.64af8f61.svg") no-repeat -165px -1589px;
+  width: 16px;
+  height: 18px;
+}
+
+.nav .nav__body > .nav__body--category:nth-child(5) > .icon {
+  background: url("/Resource/img/Sprites.64af8f61.svg") no-repeat -206px -1588px;
+  width: 20px;
+  height: 18px;
+}
+
+.nav .nav__body > .nav__body--category:nth-child(6) > .icon {
+  background: url("/Resource/img/Sprites.64af8f61.svg") no-repeat -254px -1589px;
+  width: 14px;
+  height: 17px;
+}
+
+.nav .nav__body > .nav__body--category:nth-child(7) > .icon {
+  background: url("/Resource/img/Sprites.64af8f61.svg") no-repeat -294px -1589px;
+  width: 18px;
+  height: 17px;
+}
+
+.nav .nav__body > .nav__body--category:nth-child(8) > .icon {
+  background: url("/Resource/img/Sprites.64af8f61.svg") no-repeat -339px -1590px;
+  width: 18px;
+  height: 17px;
+}
+
+.nav .nav__body > .nav__body--category:nth-child(9) > .icon {
+  background: url("/Resource/img/Sprites.64af8f61.svg") no-repeat -382px -1589px;
+  width: 17px;
+  height: 18px;
+}
+
+.nav .nav__body > .nav__body--category:nth-child(10) > .icon {
+  background: url("/Resource/img/Sprites.64af8f61.svg") no-repeat -427px -1591px;
+  width: 16px;
+  height: 16px;
+}
+
+.nav .nav__body > .nav__body--category:nth-child(11) > .icon {
+  background: url("/Resource/img/Sprites.64af8f61.svg") no-repeat -471px -1590px;
+  width: 17px;
+  height: 17px;
+}
+
+.nav .nav__body > .nav__body--category:nth-child(12) > .icon {
+  background: url("/Resource/img/Sprites.64af8f61.svg") no-repeat -514px -1590px;
+  width: 15px;
+  height: 16px;
+}
+
+.nav .nav__body > .nav__body--category:nth-child(13) > .icon {
+  background: url("/Resource/img/Sprites.64af8f61.svg") no-repeat -558px -1593px;
+  width: 8px;
+  height: 13px;
+}
+
+.nav .nav__body > .nav__body--category:nth-child(14) > .icon {
+  background: url("/Resource/img/Sprites.64af8f61.svg") no-repeat -592px -1588px;
+  width: 23px;
+  height: 18px;
+}
+
+.nav .nav__body > .nav__body--category:nth-child(15) > .icon {
+  background: url("/Resource/img/Sprites.64af8f61.svg") no-repeat -636px -1588px;
+  width: 19px;
+  height: 18px;
+}
