@@ -118,6 +118,7 @@
           <div class="icon"></div>
           <div class="icon"></div>
         </div>
+
         <table class="table">
           <tr>
             <th>
@@ -692,6 +693,133 @@
       </div>
     </div>
   </div>
+
+  <form style="display: none;" class="popup__employeedetail">
+    <div class="popup">
+      <div class="popup__header">
+        <h1>Đăng ký tài khoản</h1>
+        <img onclick="CancelPopup" src="/assets/icon/x.svg" alt="Thoát đăng ký tài khoản">
+      </div>
+
+      <div class="popup__text">
+        <div class="popup__text--label">
+          Mã nhân viên <span class="required">*</span>
+        </div>
+        <input class="popup__text--field" type="text" placeholder="MF1609" required />
+      </div>
+
+      <div class="popup__text">
+        <div class="popup__text--label">
+          Họ và tên <span class="required">*</span>
+        </div>
+        <input class="popup__text--field" type="text" required />
+      </div>
+
+      <div class="popup__text">
+        <div class="popup__text--label">
+          Ngày sinh <span class="required">*</span>
+        </div>
+        <input class="popup__text--field" type="text" placeholder="dd/MM/yyyy" required />
+      </div>
+
+      <div class="popup__text">
+        <div class="popup__text--label">
+          Giới tính
+        </div>
+        <label>
+          <input name="gender" type="radio" value="1" checked /> Nam
+        </label>
+        <label>
+          <input name="gender" type="radio" value="0" /> Nữ
+        </label>
+      </div>
+
+      <div class="popup__text">
+        <div class="popup__text--label">
+          Đơn vị <span class="required">*</span>
+        </div>
+        <input class="popup__text--field" type="text" required />
+      </div>
+      <div class="popup__text">
+        <div class="popup__text--label">
+          Số CMND
+        </div>
+        <input class="popup__text--field" type="text" />
+      </div>
+      <div class="popup__text">
+        <div class="popup__text--label">
+          Ngày cấp
+        </div>
+        <input class="popup__text--field" type="text" />
+      </div>
+      <div class="popup__text">
+        <div class="popup__text--label">
+          Chức danh
+        </div>
+        <input class="popup__text--field" type="text" />
+      </div>
+      <div class="popup__text">
+        <div class="popup__text--label">
+          Nơi cấp
+        </div>
+        <input class="popup__text--field" type="text" />
+      </div>
+      <div class="popup__text">
+        <div class="popup__text--label">
+          Địa chỉ
+        </div>
+        <input class="popup__text--field" type="text" />
+      </div>
+      <div class="popup__text">
+        <div class="popup__text--label">
+          ĐT di động
+        </div>
+        <input class="popup__text--field" type="text" />
+      </div>
+      <div class="popup__text">
+        <div class="popup__text--label">
+          ĐT cố định
+        </div>
+        <input class="popup__text--field" type="text" />
+      </div>
+      <div class="popup__text">
+        <div class="popup__text--label">
+          Email
+        </div>
+        <input class="popup__text--field" type="text" />
+      </div>
+      <div class="popup__text">
+        <div class="popup__text--label">
+          Tài khoản ngân hàng
+        </div>
+        <input class="popup__text--field" type="text" />
+      </div>
+      <div class="popup__text">
+        <div class="popup__text--label">
+          Tên ngân hàng
+        </div>
+        <input class="popup__text--field" type="text" />
+      </div>
+
+      <div class="popup__text">
+        <div class="popup__text--label">
+          Chi nhánh
+        </div>
+        <input class="popup__text--field" type="text" />
+      </div>
+
+      <div class="popup__footer">
+        <button id="cancel" type="button" class="extra-button">Hủy</button>
+        <button id="save" class="extra-button">Cất</button>
+        <button id="save-and-add" class="main-button">Cất và thêm</button>
+      </div>
+
+    </div>
+  </form>
+
+  <script src="/js/employeedetail.js"></script>
+  <script src="/js/popup.js"></script>
+
 </body>
 
 </html>

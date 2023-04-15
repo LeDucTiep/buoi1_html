@@ -1,3 +1,7 @@
+.row {
+  margin: 20px;
+  padding: 30px;
+}
 .input {
   width: 175px;
   height: 41px;

@@ -4,6 +4,8 @@
 @import url(/css/components/table.css);
 @import url(/css/components/textfield.css);
 @import url(/css/components/toastmessage.css);
+@import url(/css/components/employeedetail.css);
+@import url(/css/components/dialog.css);
 @import url(/css/layouts/content.css);
 @import url(/css/layouts/header.css);
 @import url(/css/layouts/nav.css);
@@ -32,12 +34,17 @@ body {
   --color-light-green-100: #ceead9;
   --color-light-green-50: #eef8ec;
 
+  --color-red-400: #eb3333;
+  --color-red-300: #f06666;
+
   --color-grey-400: #bdbdbd;
   --color-background-icon-button: rgba(80, 184, 60, 0.1);
   --color-primary: #007aff;
+  --color-dropdownlist-hover: rgba(80, 184, 60, 0.1);
 
   --border-color: #ccc;
   --border-color-hover: #007aff;
-  --height-primary: 36px;
   --border-input-color: #e6e6e6;
+
+  --height-primary: 36px;
 }

@@ -1,0 +1,18 @@
+.popup__dialog {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 98;
+
+    .popup {
+        --popup-height: 162px;
+        --popup-width: 384px;
+
+        .popup__guide {
+            padding-top: 10px;
+        }
+    }
+}

@@ -1,0 +1,74 @@
+.popup__employeedetail {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 98; }
+  .popup__employeedetail .popup {
+    --popup-width: 862px;
+    --popup-height: 690px; }
+    .popup__employeedetail .popup .popup__text {
+      float: left; }
+      .popup__employeedetail .popup .popup__text:nth-child(2) {
+        width: 15%;
+        margin-right: 10px; }
+      .popup__employeedetail .popup .popup__text:nth-child(3) {
+        width: 25%;
+        margin-left: 0px;
+        margin-right: 10px; }
+      .popup__employeedetail .popup .popup__text:nth-child(4) {
+        width: 20%;
+        margin-left: 0px;
+        margin-right: 10px; }
+      .popup__employeedetail .popup .popup__text:nth-child(5) {
+        width: 25%;
+        margin: 10px 0px 16px 10px; }
+      .popup__employeedetail .popup .popup__text:nth-child(6) {
+        width: calc(40% + 10px);
+        margin-right: 10px; }
+      .popup__employeedetail .popup .popup__text:nth-child(7) {
+        width: 31%;
+        margin-left: 0px;
+        margin-right: 10px; }
+      .popup__employeedetail .popup .popup__text:nth-child(8) {
+        width: 20%;
+        margin-left: 0px;
+        margin-right: 10px; }
+      .popup__employeedetail .popup .popup__text:nth-child(9) {
+        width: calc(40% + 10px);
+        margin-right: 10px; }
+      .popup__employeedetail .popup .popup__text:nth-child(10) {
+        width: calc(51% + 10px);
+        margin-left: 0px;
+        margin-right: 10px; }
+      .popup__employeedetail .popup .popup__text:nth-child(11) {
+        margin-right: 10px; }
+      .popup__employeedetail .popup .popup__text:nth-child(12) {
+        width: 25%;
+        margin-right: 10px; }
+      .popup__employeedetail .popup .popup__text:nth-child(13) {
+        width: 25%;
+        margin-left: 0px;
+        margin-right: 10px; }
+      .popup__employeedetail .popup .popup__text:nth-child(14) {
+        width: 25%;
+        margin-left: 0px;
+        margin-right: 10px; }
+      .popup__employeedetail .popup .popup__text:nth-child(15) {
+        width: 25%;
+        margin-right: 10px; }
+      .popup__employeedetail .popup .popup__text:nth-child(16) {
+        width: 25%;
+        margin-left: 0px;
+        margin-right: 10px; }
+      .popup__employeedetail .popup .popup__text:nth-child(17) {
+        width: 25%;
+        margin-left: 0px;
+        margin-right: 10px; }
+    .popup__employeedetail .popup .popup__footer .extra-button {
+      left: calc(var(--popup-width) - 214px); }
+    .popup__employeedetail .popup .popup__footer .main-button {
+      left: calc(var(--popup-width) - 124px);
+      width: 100px; }
