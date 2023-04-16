@@ -1,31 +1,60 @@
-table.table,
-.table th,
-.table td {
-  border: 1px #e0e0e0 solid;
-  border-collapse: collapse;
-}
+table.table {
+  border-collapse: collapse; }
+  table.table th,
+  table.table td {
+    border: 1px #e0e0e0 solid;
+    padding: 12px; }
+  table.table th {
+    background-color: #eeeeee; }
+  table.table tr:hover {
+    background-color: #eeeeee; }
 
-.table td,
-.table th {
-  padding: 12px;
-}
-
-.table th {
-  background-color: #eeeeee;
-}
-
-.table tr:hover {
-  background-color: #eeeeee;
-}
 .table__footer {
-  padding: 0px;
-}
-.table__footer > div {
-  display: inline-block;
-  margin: 0px 20px 0px 10px;
-  padding: 0px;
-}
-
-.table__recordnumber {
-  float: right;
-}
+  --table-footer-width: 97%;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  width: var(--table-footer-width);
+  position: absolute;
+  top: calc(100vh - 105px);
+  left: 24px; }
+  .table__footer .table__footer--left {
+    display: inline-block; }
+    .table__footer .table__footer--left .table__numrows {
+      padding-left: 15px; }
+  .table__footer .table__footer--right {
+    display: flex;
+    align-items: center; }
+    .table__footer .table__footer--right p {
+      margin-right: 4px; }
+    .table__footer .table__footer--right .table__maxrow {
+      margin-right: 16px; }
+      .table__footer .table__footer--right .table__maxrow .dropdownlist {
+        --input-width: 70px;
+        --input-height: 26px; }
+        .table__footer .table__footer--right .table__maxrow .dropdownlist * {
+          font-size: 12px !important; }
+        .table__footer .table__footer--right .table__maxrow .dropdownlist .dropdownlist__text {
+          --margin-top: 0px; }
+    .table__footer .table__footer--right .table__recordnumber {
+      margin-right: 16px; }
+    .table__footer .table__footer--right .icon-container {
+      display: flex;
+      width: 24px;
+      height: 24px;
+      align-items: center;
+      justify-content: center; }
+      .table__footer .table__footer--right .icon-container:has(.table__page-icon--forward) {
+        margin-right: 16px; }
+      .table__footer .table__footer--right .icon-container:hover {
+        cursor: pointer; }
+      .table__footer .table__footer--right .icon-container .table__page-icon--forward {
+        background: url("/Resource/img/Sprites.64af8f61.svg") no-repeat -36px -409px;
+        width: 8px;
+        height: 14px; }
+      .table__footer .table__footer--right .icon-container .table__page-icon--backward {
+        background: url("/Resource/img//Sprites.64af8f61.svg") no-repeat -84px -361px;
+        width: 8px;
+        height: 14px; }

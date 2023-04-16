@@ -1,7 +1,7 @@
 .container {
   display: flex;
-  --nav-width: 132px;
-  font-size: 13px; }
+  --nav-width: 200px;
+  font-size: 14px; }
   .container .nav {
     background-color: #393a3e;
     color: white;
@@ -9,18 +9,23 @@
     .container .nav .nav__header {
       display: flex;
       width: var(--nav-width);
-      justify-content: space-around;
       align-items: center;
       padding: 10px 15px 10px 15px; }
+      .container .nav .nav__header .name-app {
+        font-size: 16px; }
+        .container .nav .nav__header .name-app:hover {
+          font-size: 16px;
+          cursor: pointer; }
       .container .nav .nav__header .icon:nth-child(1) {
         background: url("/Resource/img/Sprites.64af8f61.svg") no-repeat -428px -92px;
         width: 16px;
         height: 16px;
-        margin-right: 10px; }
+        margin-right: 24px;
+        margin-left: 4px; }
         .container .nav .nav__header .icon:nth-child(1):hover {
           cursor: pointer; }
       .container .nav .nav__header img {
-        margin-right: 2px; }
+        margin-right: 5px; }
         .container .nav .nav__header img:hover {
           cursor: pointer; }
     .container .nav .nav__body > .nav__body--category {

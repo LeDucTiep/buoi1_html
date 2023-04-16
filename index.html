@@ -14,8 +14,11 @@
     <div class="nav">
       <div class="nav__header">
         <div class="icon"></div>
+
         <img width="26" height="26" class="icon" src="/Resource/favicon.ico"></img>
-        KẾ TOÁN
+
+
+        <div class="name-app">KẾ TOÁN</div>
       </div>
 
       <div class="nav__body">
@@ -101,7 +104,9 @@
         <div class="icon"></div>
         <div class="icon"></div>
         <div class="header__username">Lê Đức Tiệp</div>
-        <div class="icon"></div>
+        <div class="icon-container">
+          <div class="icon"></div>
+        </div>
       </div>
     </div>
 
@@ -679,14 +684,57 @@
         </table>
 
         <div class="table__footer">
-          <div class="table__numrows">
-            Tổng số: 1035 bản ghi
+          <div class="table__footer--left">
+            <div class="table__numrows">
+              Tổng số: 1035 bản ghi
+            </div>
           </div>
-          <div class="table__maxrow">
-            Số bản ghi/trang: 10
-          </div>
-          <div class="table__recordnumber">
-            1 - 4 bản ghi
+          <div class="table__footer--right">
+            <p>
+              Số bản ghi/trang:
+            </p>
+
+            <div class="table__maxrow">
+              <div class="dropdownlist">
+                <div class="dropdownlist__text">
+                  <input class="dropdownlist__text--field" value="20" type="text">
+                  <div class="dropdownlist-button">
+                    <div class="icon-arrow-down"></div>
+                  </div>
+                </div>
+
+                <div class="dropdownlist__menu">
+                  <div class="item">10
+                    <img class="dropdownlist__menu--icon-checked" width="15" height="15" src="/assets/icon/check-green.svg" alt="Icon check green">
+                  </div>
+                  <div class="item">20
+                    <img class="dropdownlist__menu--icon-checked" width="15" height="15" src="/assets/icon/check-green.svg" alt="Icon check green">
+                  </div>
+                  <div class="item">30
+                    <img class="dropdownlist__menu--icon-checked" width="15" height="15" src="/assets/icon/check-green.svg" alt="Icon check green">
+                  </div>
+                  <div class="item">50
+                    <img class="dropdownlist__menu--icon-checked" width="15" height="15" src="/assets/icon/check-green.svg" alt="Icon check green">
+                  </div>
+                  <div class="item">100
+                    <img class="dropdownlist__menu--icon-checked" width="15" height="15" src="/assets/icon/check-green.svg" alt="Icon check green">
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="table__recordnumber">
+              1 - 4 bản ghi
+            </div>
+
+            <div class="icon-container">
+              <div class="table__page-icon--forward"></div>
+            </div>
+            <div class="icon-container">
+              <div class="table__page-icon--backward"></div>
+            </div>
+
+
           </div>
         </div>
 
@@ -819,6 +867,7 @@
 
   <script src="/js/employeedetail.js"></script>
   <script src="/js/popup.js"></script>
+  <script src="/js/dropdownlist.js"></script>
 
 </body>
 

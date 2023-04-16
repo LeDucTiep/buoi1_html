@@ -1,9 +1,8 @@
 .content {
-  width: 100%;
-  height: calc(100vh - 45px);
+  height: calc(100vh - 56px);
   background-color: var(--border-input-color);
   position: absolute;
-  top: 45px;
+  top: 56px;
   left: calc(var(--nav-width) + 30px);
   width: calc(100% - calc(var(--nav-width) + 30px)); }
   .content .content__head {
@@ -21,7 +20,7 @@
       margin-left: 15px; }
   .content .content__body {
     background-color: white;
-    margin: 15px 15px 0px 15px;
+    margin: 15px 15px 0px 24px;
     border-radius: var(--border-radius);
     height: calc(100vh - 125px); }
     .content .content__body div:has(.content__input--field) {
@@ -65,7 +64,8 @@
       margin: 5px 15px 15px 15px;
       width: 99%;
       overflow-y: scroll;
-      height: calc(100vh - 230px); }
+      height: calc(100vh - 238px);
+      border-collapse: collapse; }
       .content .content__body table.table tr th {
         font-size: 12px;
         align-items: center; }

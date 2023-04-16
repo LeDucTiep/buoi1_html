@@ -4,12 +4,13 @@
   top: 0px;
   left: calc(var(--nav-width) + 30px);
   width: calc(100% - calc(var(--nav-width) + 30px));
-  height: 45px;
+  height: 56px;
   background-color: white;
   align-items: center;
   justify-content: space-between; }
   .header .left-header {
-    display: flex; }
+    display: flex;
+    position: relative; }
     .header .left-header:has(.icon:nth-child(4):hover) .header__menu--list {
       display: block; }
     .header .left-header .header__menu:hover {
@@ -19,8 +20,8 @@
       display: none;
       position: absolute;
       background-color: white;
-      top: 34px;
-      left: 36px;
+      top: 19px;
+      left: 33px;
       z-index: 999;
       border-radius: var(--border-radius);
       padding: 8px;
@@ -34,15 +35,15 @@
         .header .left-header .header__menu--list .header__menu--item:hover {
           background-color: var(--color-dropdownlist-hover);
           cursor: pointer; }
-    .header .left-header .icon:hover {
+    .header .left-header > .icon:hover {
       cursor: pointer; }
-    .header .left-header .icon:nth-child(1) {
+    .header .left-header > .icon:nth-child(1) {
       background: url("/Resource/img/Sprites.64af8f61.svg") no-repeat -847px -35px;
       width: 16px;
       height: 14px;
       margin-left: 15px;
       margin-right: 10px; }
-    .header .left-header .icon:nth-child(4) {
+    .header .left-header > .icon:nth-child(4) {
       background: url("/Resource/img/Sprites.64af8f61.svg") no-repeat -1129px -365px;
       width: 14px;
       height: 8px;
@@ -54,23 +55,31 @@
   .header .right-header {
     display: flex;
     align-items: center; }
-    .header .right-header .icon:hover {
+    .header .right-header > .icon:hover {
       cursor: pointer; }
-    .header .right-header .icon:nth-child(1) {
+    .header .right-header > .icon:nth-child(1) {
       background: url("/Resource/img/Sprites.64af8f61.svg") no-repeat -788px -30px;
       width: 22px;
       height: 24px;
       margin-right: 20px; }
-    .header .right-header .icon:nth-child(2) {
+    .header .right-header > .icon:nth-child(2) {
       background: url("/Resource/img/Sprites.64af8f61.svg") no-repeat -352px -894px;
       width: 32px;
       height: 32px;
       border-radius: 50%; }
-    .header .right-header .icon:nth-child(4) {
-      background: url("/Resource/img/Sprites.64af8f61.svg") no-repeat -1078px -38px;
-      width: 9px;
-      height: 6px;
-      margin-right: 15px; }
+    .header .right-header > .icon-container {
+      display: flex;
+      width: 24px;
+      height: 24px;
+      align-items: center;
+      justify-content: center;
+      margin-right: 14px; }
+      .header .right-header > .icon-container:hover {
+        cursor: pointer; }
+      .header .right-header > .icon-container > .icon {
+        background: url("/Resource/img/Sprites.64af8f61.svg") no-repeat -1800px -478px;
+        width: 8px;
+        height: 5px; }
     .header .right-header .header__username {
       padding: 5px; }
       .header .right-header .header__username:hover {

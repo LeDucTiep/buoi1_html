@@ -1,4 +1,4 @@
-[class$=-button] {
+[class$="-button"] {
   width: 80px;
   height: 36px;
   border-radius: 4px;
@@ -7,69 +7,55 @@
   line-height: 36px;
   font-size: 14px;
   text-align: center;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-}
+  user-select: none; }
 
 button.main-button,
 button.icon-button,
 button.extra-button,
 button.link-button {
   border: none;
-  display: block;
-}
+  display: block; }
 
 .main-button {
   background: #50b83c;
-  color: #fff;
-}
-.main-button:hover {
-  background-color: #57c841;
-  cursor: pointer;
-}
-.main-button:disabled, .main-button[disabled] {
-  background-color: var(--color-light-green-200);
-  cursor: default;
-}
+  color: #fff; }
+  .main-button:hover {
+    background-color: #57c841;
+    cursor: pointer; }
+  .main-button:disabled, .main-button[disabled] {
+    background-color: var(--color-light-green-200);
+    cursor: default; }
 
 .combo-button .icon-button:hover,
 .button-with-icon .main-button:hover,
 .button-full .main-button:hover,
 .button-full .icon-button:has(.icon-arrow-down):hover {
   background-color: #57c841;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .icon-button:hover {
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .link-button:hover {
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .link-button:active {
   color: var(--color-light-green-600);
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .extra-button:active {
   background-color: var(--color-grey-400);
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .icon-button:active:not(:disabled),
 .main-button:active,
 .combo-button .icon-button:active,
 .button-full .icon-button:has(.icon-arrow-down):active {
   background-color: var(--color-light-green-600);
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .icon-button:active:not(:disabled) .icon-plus {
-  --color: white;
-}
+  --color: white; }
 
 .extra-button:disabled,
 .extra-button[disabled],
@@ -77,51 +63,43 @@ button.link-button {
 .extra-button[disabled]:hover {
   color: var(--color-grey-400);
   cursor: default;
-  border: none;
-}
+  border: none; }
 
 .link-button:disabled,
 .link-button[disabled],
 .link-button:disabled:hover,
 .link-button[disabled]:hover {
   color: var(--color-light-green-200);
-  cursor: default;
-}
+  cursor: default; }
 
 .icon-button:disabled,
 .icon-button[disabled],
 .icon-button:disabled:hover,
 .icon-button[disabled]:hover {
   color: var(--color-light-green-50);
-  cursor: default;
-}
+  cursor: default; }
 
 .icon-button:disabled .icon-plus,
 .icon-button[disabled] .icon-plus,
 .icon-button:disabled:hover .icon-plus,
 .icon-button[disabled]:hover .icon-plus {
-  --color: var(--color-light-green-200);
-}
+  --color: var(--color-light-green-200); }
 
 .extra-button {
   background: #e6e6e6;
-  color: #1f1f1f;
-}
+  color: #1f1f1f; }
 
 .extra-button:hover {
   border: 1px solid var(--color-light-green-500);
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .link-button {
-  color: var(--color-light-green-500);
-}
+  color: var(--color-light-green-500); }
 
 .icon-button {
   background-color: var(--color-background-icon-button);
   width: 40px;
-  align-items: center;
-}
+  align-items: center; }
 
 .icon-plus {
   --b: 2px;
@@ -132,25 +110,21 @@ button.link-button {
   margin: 8px 10px 8px 10px;
   --color: var(--color-light-green-500);
   background: conic-gradient(from 90deg at var(--b) var(--b), rgba(0, 0, 0, 0) 90deg, var(--color) 0) calc(100% + var(--b) / 2) calc(100% + var(--b) / 2)/calc(50% + var(--b)) calc(50% + var(--b));
-  display: inline-block;
-}
+  display: inline-block; }
 
 .combo-button {
   display: flex;
   width: 114px;
-  height: 36px;
-}
-.combo-button .main-button {
-  width: 74px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-.combo-button .icon-button {
-  margin-left: 1px;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  background-color: var(--color-light-green-500);
-}
+  height: 36px; }
+  .combo-button .main-button {
+    width: 74px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px; }
+  .combo-button .icon-button {
+    margin-left: 1px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: var(--color-light-green-500); }
 
 .icon-arrow-down {
   position: relative;
@@ -161,81 +135,62 @@ button.link-button {
   border-width: 0 2px 2px 0;
   display: inline-block;
   padding: 3.5px;
-  transform: rotate(45deg);
-}
+  transform: rotate(45deg); }
 
 .button-with-icon {
   display: flex;
-  width: -moz-fit-content;
   width: fit-content;
-  height: -moz-fit-content;
   height: fit-content;
-  border-radius: var(--border-radius);
-}
-.button-with-icon:hover .icon-button,
-.button-with-icon:hover .main-button {
-  background-color: #57c841;
-  cursor: pointer;
-}
-.button-with-icon:active .icon-button,
-.button-with-icon:active .main-button {
-  background-color: var(--color-light-green-600);
-  cursor: pointer;
-}
-.button-with-icon .icon-button {
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-  background-color: var(--color-light-green-500);
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.button-with-icon .icon-button .icon-plus {
-  --color: white;
-  margin-left: 11px;
-  margin-right: 3px;
-}
-.button-with-icon .main-button {
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  background-color: var(--color-light-green-500);
-  width: 64px;
-}
+  border-radius: var(--border-radius); }
+  .button-with-icon:hover .icon-button,
+  .button-with-icon:hover .main-button {
+    background-color: #57c841;
+    cursor: pointer; }
+  .button-with-icon:active .icon-button,
+  .button-with-icon:active .main-button {
+    background-color: var(--color-light-green-600);
+    cursor: pointer; }
+  .button-with-icon .icon-button {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: var(--color-light-green-500);
+    width: fit-content; }
+    .button-with-icon .icon-button .icon-plus {
+      --color: white;
+      margin-left: 11px;
+      margin-right: 3px; }
+  .button-with-icon .main-button {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: var(--color-light-green-500);
+    width: 64px; }
 
 .button-full {
-  display: flex;
-}
-.button-full .button-with-icon:active .icon-button,
-.button-full .button-with-icon:active .main-button {
-  background-color: var(--color-light-green-600);
-  cursor: pointer;
-}
-.button-full .icon-button {
-  background-color: var(--color-light-green-500);
-}
-.button-full .icon-button:nth-child(1) {
-  width: 36px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-.button-full .icon-button:nth-child(2) {
-  margin-left: 1px;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-}
-.button-full .icon-button .icon-plus {
-  margin-left: 12px;
-  margin-right: 2px;
-  --color: white;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-.button-full .main-button {
-  width: -moz-fit-content;
-  width: fit-content;
-  min-width: 64px;
-  border-radius: unset;
-}
-.button-full .main-button:hover {
-  background-color: #57c841;
-  cursor: pointer;
-}/*# sourceMappingURL=button.css.map */
+  display: flex; }
+  .button-full .button-with-icon:active .icon-button,
+  .button-full .button-with-icon:active .main-button {
+    background-color: var(--color-light-green-600);
+    cursor: pointer; }
+  .button-full .icon-button {
+    background-color: var(--color-light-green-500); }
+    .button-full .icon-button:nth-child(1) {
+      width: 36px;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px; }
+    .button-full .icon-button:nth-child(2) {
+      margin-left: 1px;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px; }
+    .button-full .icon-button .icon-plus {
+      margin-left: 12px;
+      margin-right: 2px;
+      --color: white;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px; }
+  .button-full .main-button {
+    width: fit-content;
+    min-width: 64px;
+    border-radius: unset; }
+    .button-full .main-button:hover {
+      background-color: #57c841;
+      cursor: pointer; }

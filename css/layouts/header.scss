@@ -4,14 +4,14 @@
   top: 0px;
   left: calc(var(--nav-width) + 30px);
   width: calc(100% - calc(var(--nav-width) + 30px));
-  height: 45px;
+  height: 56px;
   background-color: white;
   align-items: center;
   justify-content: space-between;
 
-
   .left-header {
     display: flex;
+    position: relative;
 
     &:has(.icon:nth-child(4):hover) .header__menu--list {
       display: block;
@@ -29,8 +29,8 @@
       display: none;
       position: absolute;
       background-color: white;
-      top: 34px;
-      left: 36px;
+      top: 19px;
+      left: 33px;
       z-index: 999;
       border-radius: var(--border-radius);
       padding: 8px;
@@ -53,7 +53,7 @@
       }
     }
 
-    .icon {
+    >.icon {
       &:hover {
         cursor: pointer;
       }
@@ -84,7 +84,7 @@
     display: flex;
     align-items: center;
 
-    .icon {
+    >.icon {
       &:hover {
         cursor: pointer;
       }
@@ -102,12 +102,26 @@
         height: 32px;
         border-radius: 50%;
       }
+    }
 
-      &:nth-child(4) {
-        background: url("/Resource/img/Sprites.64af8f61.svg") no-repeat -1078px -38px;
-        width: 9px;
-        height: 6px;
-        margin-right: 15px;
+    >.icon-container {
+      display: flex;
+      width: 24px;
+      height: 24px;
+      align-items: center;
+      justify-content: center;
+      margin-right: 14px;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      >.icon {
+
+        background: url("/Resource/img/Sprites.64af8f61.svg") no-repeat -1800px -478px;
+        width: 8px;
+        height: 5px;
+        // margin-right: 15px;
       }
     }
 

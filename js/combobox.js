@@ -1,7 +1,7 @@
 let ClickCityEventHandler = (event) => {
     document.getElementsByClassName("input__text--field")[0].value = event.srcElement.outerText;
 
-    let citys = document.getElementsByClassName("city");
+    let citys = document.getElementsByClassName("item");
 
     for (let index = 0; index < citys.length; index++) {
         citys[index].getElementsByClassName("combobox__menu--icon-checked")[0].style.visibility = "hidden";
@@ -11,7 +11,7 @@ let ClickCityEventHandler = (event) => {
 };
 
 let citys = document.getElementsByClassName("combobox__menu")[0]
-    .getElementsByClassName("city");
+    .getElementsByClassName("item");
 
 for (let i = 0; i < citys.length; i++) {
     citys[i].addEventListener("click", ClickCityEventHandler);
