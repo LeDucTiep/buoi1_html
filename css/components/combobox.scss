@@ -1,0 +1,77 @@
+.combobox {
+  position: relative;
+  width: fit-content;
+}
+
+.combobox * {
+  font-size: 9px;
+}
+
+.combobox .icon-button {
+  position: absolute;
+  top: 22px;
+  left: 149px;
+  width: 24px;
+  height: 23px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  border-left: 1px solid #e6e6e6;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+div.combobox .icon-button .icon-arrow-down {
+  border-color: #000;
+  padding: 2px;
+  top: -6.5px;
+  left: 0px;
+}
+
+.combobox .icon-button:hover {
+  cursor: pointer;
+}
+
+.combobox .combobox__menu {
+  display: none;
+  width: 167px;
+  padding: 4px;
+  border-radius: var(--border-radius);
+  box-shadow: 0px 7px 8px 1px gray;
+}
+
+.combobox__menu > .item {
+  position: relative;
+  padding: 10.5px;
+  border-radius: var(--border-radius);
+}
+
+.combobox__menu > .item:hover {
+  background-color: var(--color-light-green-200);
+}
+
+.combobox:hover .combobox__menu {
+  display: block;
+}
+
+.icon-button:has(.icon-arrow-down):active {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.combobox__menu-guide {
+  position: relative;
+  color: var(--color-light-green-300);
+  padding: 10.5px;
+  border-radius: var(--border-radius);
+}
+
+.combobox__menu--icon-checked {
+  position: absolute;
+  top: 6px;
+  left: calc(100% - 19px);
+}
+
+.combobox__menu-guide .combobox__menu--icon-checked {
+  visibility: visible;
+}
+.item .combobox__menu--icon-checked {
+  visibility: hidden;
+}

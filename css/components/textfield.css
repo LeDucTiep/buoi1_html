@@ -1,16 +1,14 @@
 .row {
   margin: 20px;
-  padding: 30px;
-}
+  padding: 30px; }
+
 .input {
   width: 175px;
-  height: 41px;
-}
+  height: 41px; }
 
 .input__label {
   font-size: 9px;
-  text-align: left;
-}
+  text-align: left; }
 
 .input__text {
   border-radius: var(--border-radius);
@@ -20,8 +18,7 @@
   align-items: center;
   background-color: var(--border-input-color);
   padding: auto;
-  margin-top: 6px;
-}
+  margin-top: 6px; }
 
 .input__text--field {
   border-bottom-left-radius: var(--border-radius);
@@ -33,8 +30,7 @@
   font-size: 8px;
   margin-left: 1px;
   padding: 7px 8px;
-  outline: 0px;
-}
+  outline: 0px; }
 
 .input__text--icon {
   background-color: var(--border-input-color);
@@ -42,37 +38,27 @@
   height: 22px;
   border-bottom-right-radius: var(--border-radius);
   border-top-right-radius: var(--border-radius);
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .input__text--icon > img {
   width: 16px;
   height: 16px;
-  margin: 3px 6px;
-}
+  margin: 3px 6px; }
 
 .input-verifying .input__text--icon {
-  background-color: #ffffff;
-}
+  background-color: #ffffff; }
 
 .input-verifying .input__text {
-  background-color: var(--color-light-green-500);
-}
+  background-color: var(--color-light-green-500); }
 
 .rotate {
-  animation: rotation 4s infinite linear;
-}
+  animation: rotation 4s infinite linear; }
 
 @keyframes rotation {
   from {
-    transform: rotate(0deg);
-  }
+    transform: rotate(0deg); }
   to {
-    transform: rotate(359deg);
-  }
-}
-
+    transform: rotate(359deg); } }
 .input__text:not(:has(.input__text--icon)) .input__text--field {
   width: calc(100% - 18px);
-  border-radius: var(--border-radius);
-}
+  border-radius: var(--border-radius); }
