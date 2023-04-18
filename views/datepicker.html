@@ -7,32 +7,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Calendarify.js Date Picker Example</title>
 
-  <link rel="stylesheet" type="text/css" href="/css/components/datepicker.css">
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
 </head>
 
 <body>
 
-  <input type="text" class="date-input" />
+  <div class="row">
+    <div class="input-date">
+      <label class="input__label" for="warter-mark">Field normal label</label>
+
+      <div class="input__text">
+        <input class="input__text--field" type="text" id="warter-mark" placeholder="Watermark..." />
+        <div class="icon-container">
+          <div class="icon-date"></div>
+        </div>
+      </div>
+
+      <div class="date-picker__popup">
+
+        <div class="icon-container">
+          <div class="icon-arrow-down"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-  <script src="/js/datepicker.js"></script>
-
-  <script>
-    const calendarify = new Calendarify('.date-input', {
-      quickActions: false,
-      accentColor: '#50B83C', // You can customize the accent color
-      isDark: false, // You can enable/disable dark mode
-      onChange: (calendarify) => console.log(calendarify), // You can trigger whatever function in this callback property (e.g. to fetch data with passed date parameter)
-      locale: { // You can set locale for calendar
-        format: "DD-MM-YYYY", // Set Custom Format with Moment JS
-        lang: {
-          code: 'vi', // Set country code (e.g. "en", "id", etc)
-          weekdays: ['CN', 'T2', 'T3', 'T4', 'T5', 'T6', 'T7'], // Or you can use locale moment.weekdays instead
-        }
-      }
-    })
-    calendarify.init()
-  </script>
 
 </body>
 

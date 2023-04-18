@@ -3,10 +3,11 @@
 @import url(/css/components/popup.css);
 @import url(/css/components/table.css);
 @import url(/css/components/textfield.css);
-@import url(/css/components/toastmessage.css);
 @import url(/css/components/employeedetail.css);
 @import url(/css/components/dialog.css);
 @import url(/css/components/dropdownlist.css);
+@import url(/css/components/icon.css);
+@import url(/css/components/datepicker.css);
 @import url(/css/layouts/content.css);
 @import url(/css/layouts/header.css);
 @import url(/css/layouts/nav.css);

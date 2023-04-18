@@ -99,3 +99,7 @@
         background: url("/Resource/img/Sprites.64af8f61.svg") no-repeat -636px -1588px;
         width: 19px;
         height: 18px; }
+
+@media only screen and (max-width: 1600px) {
+  .container .nav .nav__body > .nav__body--category {
+    padding: 10px; } }

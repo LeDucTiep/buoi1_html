@@ -1,0 +1,77 @@
+.icon-container {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    justify-content: center;
+
+    &:has(.table__page-icon--forward) {
+        margin-right: 16px;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    .icon-search-black {
+        background: url('/assets/icon/search 2.svg');
+        width: 16px;
+        height: 16px;
+    }
+
+    .icon-check-green {
+        background: url('/assets/icon/check-green.svg');
+        width: 24px;
+        height: 24px;
+    }
+
+    .icon-refresh-green {
+        background: url('/assets/icon/refresh.png');
+        width: 20px;
+        height: 20px;
+    }
+
+    .icon-arrow-down-black {
+        position: relative;
+        top: -1.25px;
+        left: -1.25px;
+        --border-color: #000;
+        border: solid var(--border-color);
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 3.5px;
+        transform: rotate(45deg);
+    }
+
+    .icon-arrow-down-white {
+        position: relative;
+        top: -1.25px;
+        left: -1.25px;
+        --border-color: #fff;
+        border: solid var(--border-color);
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 3.5px;
+        transform: rotate(45deg);
+    }
+
+    .table__page-icon--forward {
+        background: url('/Resource/img/Sprites.64af8f61.svg') no-repeat -36px -409px;
+        // background: url('/Resource/img/Sprites.64af8f61.svg') no-repeat -36px -361px;
+        width: 8px;
+        height: 14px;
+    }
+
+    .table__page-icon--backward {
+        // background: url('imgs/Sprites.64af8f61.svg') no-repeat -84px -409px;
+        background: url('/Resource/img//Sprites.64af8f61.svg') no-repeat -84px -361px;
+        width: 8px;
+        height: 14px;
+    }
+
+    .icon-date {
+        background: url('/Resource/img/Sprites.64af8f61.svg') no-repeat -128px -312px;
+        width: 16px;
+        height: 16px;
+    }
+}

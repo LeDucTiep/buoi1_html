@@ -1,4 +1,4 @@
-var FormSubmitOnlickListener = (event) => {
+var formSubmitOnlickListener = (event) => {
     let inputTags = document.querySelectorAll('input:invalid');
 
     for (let index = 0; index < inputTags.length; index++) {
@@ -12,14 +12,13 @@ var FormSubmitOnlickListener = (event) => {
     }
 }
 
-
-var CancelPopup = (event) => {
+var cancelPopup = (event) => {
     document.getElementsByClassName("popup")[0].parentElement.style.display = 'none';
 }
 
 
 document.querySelector("div.popup__header > img")
     .addEventListener("click", CancelPopup);
-document.getElementById("cancel").addEventListener("click", CancelPopup);
-document.getElementById("save").addEventListener("click", FormSubmitOnlickListener);
-document.getElementById("save-and-add").addEventListener("click", FormSubmitOnlickListener);
+document.getElementById("cancel").addEventListener("click", cancelPopup);
+document.getElementById("save").addEventListener("click", formSubmitOnlickListener);
+document.getElementById("save-and-add").addEventListener("click", formSubmitOnlickListener);

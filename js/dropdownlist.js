@@ -1,4 +1,4 @@
-let ClickCityEventHandler = (event) => {
+let clickCityEventHandler = (event) => {
     document.getElementsByClassName("dropdownlist__text--field")[0].value = event.srcElement.outerText;
 
     let citys = document.getElementsByClassName("item");
@@ -14,6 +14,6 @@ let citys = document.getElementsByClassName("dropdownlist__menu")[0]
     .getElementsByClassName("item");
 
 for (let i = 0; i < citys.length; i++) {
-    citys[i].addEventListener("click", ClickCityEventHandler);
+    citys[i].addEventListener("click", clickCityEventHandler);
 }
 

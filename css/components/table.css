@@ -5,6 +5,9 @@ table.table {
     border: 1px #e0e0e0 solid;
     padding: 12px; }
   table.table th {
+    position: sticky;
+    top: -1px;
+    z-index: 10;
     background-color: #eeeeee; }
   table.table tr:hover {
     background-color: #eeeeee; }
@@ -40,21 +43,3 @@ table.table {
           --margin-top: 0px; }
     .table__footer .table__footer--right .table__recordnumber {
       margin-right: 16px; }
-    .table__footer .table__footer--right .icon-container {
-      display: flex;
-      width: 24px;
-      height: 24px;
-      align-items: center;
-      justify-content: center; }
-      .table__footer .table__footer--right .icon-container:has(.table__page-icon--forward) {
-        margin-right: 16px; }
-      .table__footer .table__footer--right .icon-container:hover {
-        cursor: pointer; }
-      .table__footer .table__footer--right .icon-container .table__page-icon--forward {
-        background: url("/Resource/img/Sprites.64af8f61.svg") no-repeat -36px -409px;
-        width: 8px;
-        height: 14px; }
-      .table__footer .table__footer--right .icon-container .table__page-icon--backward {
-        background: url("/Resource/img//Sprites.64af8f61.svg") no-repeat -84px -361px;
-        width: 8px;
-        height: 14px; }

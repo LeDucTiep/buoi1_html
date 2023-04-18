@@ -126,17 +126,6 @@ button.link-button {
     border-bottom-left-radius: 0px;
     background-color: var(--color-light-green-500); }
 
-.icon-arrow-down {
-  position: relative;
-  top: -1.25px;
-  left: -1.25px;
-  --border-color: #fff;
-  border: solid var(--border-color);
-  border-width: 0 2px 2px 0;
-  display: inline-block;
-  padding: 3.5px;
-  transform: rotate(45deg); }
-
 .button-with-icon {
   display: flex;
   width: fit-content;

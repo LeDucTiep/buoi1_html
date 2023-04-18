@@ -8,6 +8,7 @@
         color: white;
         height: 100vh;
 
+
         .nav__header {
             display: flex;
             width: var(--nav-width);
@@ -159,5 +160,11 @@
                 }
             }
         }
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .container .nav .nav__body>.nav__body--category {
+        padding: 10px;
     }
 }
