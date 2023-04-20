@@ -17,7 +17,6 @@
 
         <img width="26" height="26" class="icon" src="/Resource/favicon.ico"></img>
 
-
         <div class="name-app">KẾ TOÁN</div>
       </div>
 
@@ -118,570 +117,585 @@
       </div>
 
       <div class="content__body">
-        <div>
-          <input class="content__input--field" type="text" placeholder="Tìm theo mã nhân viên" />
-          <div class="icon"></div>
-          <div class="icon"></div>
+        <div class="input-search">
+          <div class="input__text">
+            <input class="input__text-field" type="text" placeholder="Nhập theo mã, tên nhân viên" />
+            <div class="icon-container">
+              <div class="icon-search-black"></div>
+            </div>
+          </div>
+        </div>
+        <div class="icon-container">
+          <div class="icon-reload-gray"></div>
         </div>
 
-        <table class="table">
-          <tr>
-            <th>
-              <input type="checkbox" class="table__checkbox"></input>
-            </th>
-            <th>MÃ NHÂN VIÊN</th>
-            <th>TÊN NHÂN VIÊN</th>
-            <th>GIỚI TÍNH</th>
-            <th>NGÀY SINH</th>
-            <th>SỐ CMND</th>
-            <th>CHỨC DANH</th>
-            <th>TÊN ĐƠN VỊ</th>
-            <th>SỐ TÀI KHOẢN</th>
-            <th>TÊN NGÂN HÀNG</th>
-            <th>CHI NHÁNH TK NGÂN HÀNG</th>
-            <th>CHỨC NĂNG</th>
-          </tr>
+        <!-- Bắt đầu table danh sách nhân viên -->
+        <div class="sticky-table">
 
-          <tr>
-            <td>
-              <input type="checkbox" class="table__checkbox"></input>
-            </td>
-            <td>0012</td>
-            <td>Nguyễn Văn Liệt</td>
-            <td>Nam</td>
-            <td>31/12/1969</td>
-            <td>0362583203</td>
-            <td>Trưởng nhóm</td>
-            <td>Xay Keo - Phối trộn</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-              <button class="link-button">Sửa</button>
-              <div class="menu">
-                <div class="icon"></div>
-                <div class="menu__list">
-                  <div>Nhân bản</div>
-                  <div>Xóa</div>
-                  <div>Ngừng sử dụng</div>
-                </div>
-              </div>
-            </td>
-          </tr>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>
+                  <input type="checkbox" class="table__checkbox"></input>
+                </th>
+                <th>MÃ NHÂN VIÊN</th>
+                <th>TÊN NHÂN VIÊN</th>
+                <th>GIỚI TÍNH</th>
+                <th>NGÀY SINH</th>
+                <th>SỐ CMND</th>
+                <th>CHỨC DANH</th>
+                <th>TÊN ĐƠN VỊ</th>
+                <th>SỐ TÀI KHOẢN</th>
+                <th>TÊN NGÂN HÀNG</th>
+                <th>CHI NHÁNH TK NGÂN HÀNG</th>
+                <th>CHỨC NĂNG</th>
+              </tr>
+            </thead>
+            <tbody>
 
-          <tr>
-            <td>
-              <input type="checkbox" class="table__checkbox"></input>
-            </td>
-            <td>000579</td>
-            <td>Lưu Thủy Bình</td>
-            <td>Nam</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Vận hành tại Hà Nội</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-              <button class="link-button">Sửa</button>
-              <div class="menu">
-                <div class="icon"></div>
-                <div class="menu__list">
-                  <div>Nhân bản</div>
-                  <div>Xóa</div>
-                  <div>Ngừng sử dụng</div>
-                </div>
-              </div>
-            </td>
-          </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="table__checkbox"></input>
+                </td>
+                <td>0012</td>
+                <td>Nguyễn Văn Liệt</td>
+                <td>Nam</td>
+                <td>31/12/1969</td>
+                <td>0362583203</td>
+                <td>Trưởng nhóm</td>
+                <td>Xay Keo - Phối trộn</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <button class="link-button">Sửa</button>
+                  <div class="menu">
+                    <div class="icon"></div>
+                    <div class="menu__list">
+                      <div>Nhân bản</div>
+                      <div>Xóa</div>
+                      <div>Ngừng sử dụng</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
 
-          <tr>
-            <td>
-              <input type="checkbox" class="table__checkbox"></input>
-            </td>
-            <td>0012</td>
-            <td>Nguyễn Văn Liệt</td>
-            <td>Nam</td>
-            <td>31/12/1969</td>
-            <td>0362583203</td>
-            <td>Trưởng nhóm</td>
-            <td>Xay Keo - Phối trộn</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-              <button class="link-button">Sửa</button>
-              <div class="menu">
-                <div class="icon"></div>
-                <div class="menu__list">
-                  <div>Nhân bản</div>
-                  <div>Xóa</div>
-                  <div>Ngừng sử dụng</div>
-                </div>
-              </div>
-            </td>
-          </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="table__checkbox"></input>
+                </td>
+                <td>000579</td>
+                <td>Lưu Thủy Bình</td>
+                <td>Nam</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Vận hành tại Hà Nội</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <button class="link-button">Sửa</button>
+                  <div class="menu">
+                    <div class="icon"></div>
+                    <div class="menu__list">
+                      <div>Nhân bản</div>
+                      <div>Xóa</div>
+                      <div>Ngừng sử dụng</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
 
-          <tr>
-            <td>
-              <input type="checkbox" class="table__checkbox"></input>
-            </td>
-            <td>000579</td>
-            <td>Lưu Thủy Bình</td>
-            <td>Nam</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Vận hành tại Hà Nội</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-              <button class="link-button">Sửa</button>
-              <div class="menu">
-                <div class="icon"></div>
-                <div class="menu__list">
-                  <div>Nhân bản</div>
-                  <div>Xóa</div>
-                  <div>Ngừng sử dụng</div>
-                </div>
-              </div>
-            </td>
-          </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="table__checkbox"></input>
+                </td>
+                <td>0012</td>
+                <td>Nguyễn Văn Liệt</td>
+                <td>Nam</td>
+                <td>31/12/1969</td>
+                <td>0362583203</td>
+                <td>Trưởng nhóm</td>
+                <td>Xay Keo - Phối trộn</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <button class="link-button">Sửa</button>
+                  <div class="menu">
+                    <div class="icon"></div>
+                    <div class="menu__list">
+                      <div>Nhân bản</div>
+                      <div>Xóa</div>
+                      <div>Ngừng sử dụng</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
 
-          <tr>
-            <td>
-              <input type="checkbox" class="table__checkbox"></input>
-            </td>
-            <td>0012</td>
-            <td>Nguyễn Văn Liệt</td>
-            <td>Nam</td>
-            <td>31/12/1969</td>
-            <td>0362583203</td>
-            <td>Trưởng nhóm</td>
-            <td>Xay Keo - Phối trộn</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-              <button class="link-button">Sửa</button>
-              <div class="menu">
-                <div class="icon"></div>
-                <div class="menu__list">
-                  <div>Nhân bản</div>
-                  <div>Xóa</div>
-                  <div>Ngừng sử dụng</div>
-                </div>
-              </div>
-            </td>
-          </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="table__checkbox"></input>
+                </td>
+                <td>000579</td>
+                <td>Lưu Thủy Bình</td>
+                <td>Nam</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Vận hành tại Hà Nội</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <button class="link-button">Sửa</button>
+                  <div class="menu">
+                    <div class="icon"></div>
+                    <div class="menu__list">
+                      <div>Nhân bản</div>
+                      <div>Xóa</div>
+                      <div>Ngừng sử dụng</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
 
-          <tr>
-            <td>
-              <input type="checkbox" class="table__checkbox"></input>
-            </td>
-            <td>000579</td>
-            <td>Lưu Thủy Bình</td>
-            <td>Nam</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Vận hành tại Hà Nội</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-              <button class="link-button">Sửa</button>
-              <div class="menu">
-                <div class="icon"></div>
-                <div class="menu__list">
-                  <div>Nhân bản</div>
-                  <div>Xóa</div>
-                  <div>Ngừng sử dụng</div>
-                </div>
-              </div>
-            </td>
-          </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="table__checkbox"></input>
+                </td>
+                <td>0012</td>
+                <td>Nguyễn Văn Liệt</td>
+                <td>Nam</td>
+                <td>31/12/1969</td>
+                <td>0362583203</td>
+                <td>Trưởng nhóm</td>
+                <td>Xay Keo - Phối trộn</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <button class="link-button">Sửa</button>
+                  <div class="menu">
+                    <div class="icon"></div>
+                    <div class="menu__list">
+                      <div>Nhân bản</div>
+                      <div>Xóa</div>
+                      <div>Ngừng sử dụng</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
 
-          <tr>
-            <td>
-              <input type="checkbox" class="table__checkbox"></input>
-            </td>
-            <td>0012</td>
-            <td>Nguyễn Văn Liệt</td>
-            <td>Nam</td>
-            <td>31/12/1969</td>
-            <td>0362583203</td>
-            <td>Trưởng nhóm</td>
-            <td>Xay Keo - Phối trộn</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-              <button class="link-button">Sửa</button>
-              <div class="menu">
-                <div class="icon"></div>
-                <div class="menu__list">
-                  <div>Nhân bản</div>
-                  <div>Xóa</div>
-                  <div>Ngừng sử dụng</div>
-                </div>
-              </div>
-            </td>
-          </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="table__checkbox"></input>
+                </td>
+                <td>000579</td>
+                <td>Lưu Thủy Bình</td>
+                <td>Nam</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Vận hành tại Hà Nội</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <button class="link-button">Sửa</button>
+                  <div class="menu">
+                    <div class="icon"></div>
+                    <div class="menu__list">
+                      <div>Nhân bản</div>
+                      <div>Xóa</div>
+                      <div>Ngừng sử dụng</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
 
-          <tr>
-            <td>
-              <input type="checkbox" class="table__checkbox"></input>
-            </td>
-            <td>000579</td>
-            <td>Lưu Thủy Bình</td>
-            <td>Nam</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Vận hành tại Hà Nội</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-              <button class="link-button">Sửa</button>
-              <div class="menu">
-                <div class="icon"></div>
-                <div class="menu__list">
-                  <div>Nhân bản</div>
-                  <div>Xóa</div>
-                  <div>Ngừng sử dụng</div>
-                </div>
-              </div>
-            </td>
-          </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="table__checkbox"></input>
+                </td>
+                <td>0012</td>
+                <td>Nguyễn Văn Liệt</td>
+                <td>Nam</td>
+                <td>31/12/1969</td>
+                <td>0362583203</td>
+                <td>Trưởng nhóm</td>
+                <td>Xay Keo - Phối trộn</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <button class="link-button">Sửa</button>
+                  <div class="menu">
+                    <div class="icon"></div>
+                    <div class="menu__list">
+                      <div>Nhân bản</div>
+                      <div>Xóa</div>
+                      <div>Ngừng sử dụng</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
 
-          <tr>
-            <td>
-              <input type="checkbox" class="table__checkbox"></input>
-            </td>
-            <td>0012</td>
-            <td>Nguyễn Văn Liệt</td>
-            <td>Nam</td>
-            <td>31/12/1969</td>
-            <td>0362583203</td>
-            <td>Trưởng nhóm</td>
-            <td>Xay Keo - Phối trộn</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-              <button class="link-button">Sửa</button>
-              <div class="menu">
-                <div class="icon"></div>
-                <div class="menu__list">
-                  <div>Nhân bản</div>
-                  <div>Xóa</div>
-                  <div>Ngừng sử dụng</div>
-                </div>
-              </div>
-            </td>
-          </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="table__checkbox"></input>
+                </td>
+                <td>000579</td>
+                <td>Lưu Thủy Bình</td>
+                <td>Nam</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Vận hành tại Hà Nội</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <button class="link-button">Sửa</button>
+                  <div class="menu">
+                    <div class="icon"></div>
+                    <div class="menu__list">
+                      <div>Nhân bản</div>
+                      <div>Xóa</div>
+                      <div>Ngừng sử dụng</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
 
-          <tr>
-            <td>
-              <input type="checkbox" class="table__checkbox"></input>
-            </td>
-            <td>000579</td>
-            <td>Lưu Thủy Bình</td>
-            <td>Nam</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Vận hành tại Hà Nội</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-              <button class="link-button">Sửa</button>
-              <div class="menu">
-                <div class="icon"></div>
-                <div class="menu__list">
-                  <div>Nhân bản</div>
-                  <div>Xóa</div>
-                  <div>Ngừng sử dụng</div>
-                </div>
-              </div>
-            </td>
-          </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="table__checkbox"></input>
+                </td>
+                <td>0012</td>
+                <td>Nguyễn Văn Liệt</td>
+                <td>Nam</td>
+                <td>31/12/1969</td>
+                <td>0362583203</td>
+                <td>Trưởng nhóm</td>
+                <td>Xay Keo - Phối trộn</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <button class="link-button">Sửa</button>
+                  <div class="menu">
+                    <div class="icon"></div>
+                    <div class="menu__list">
+                      <div>Nhân bản</div>
+                      <div>Xóa</div>
+                      <div>Ngừng sử dụng</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
 
-          <tr>
-            <td>
-              <input type="checkbox" class="table__checkbox"></input>
-            </td>
-            <td>0012</td>
-            <td>Nguyễn Văn Liệt</td>
-            <td>Nam</td>
-            <td>31/12/1969</td>
-            <td>0362583203</td>
-            <td>Trưởng nhóm</td>
-            <td>Xay Keo - Phối trộn</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-              <button class="link-button">Sửa</button>
-              <div class="menu">
-                <div class="icon"></div>
-                <div class="menu__list">
-                  <div>Nhân bản</div>
-                  <div>Xóa</div>
-                  <div>Ngừng sử dụng</div>
-                </div>
-              </div>
-            </td>
-          </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="table__checkbox"></input>
+                </td>
+                <td>000579</td>
+                <td>Lưu Thủy Bình</td>
+                <td>Nam</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Vận hành tại Hà Nội</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <button class="link-button">Sửa</button>
+                  <div class="menu">
+                    <div class="icon"></div>
+                    <div class="menu__list">
+                      <div>Nhân bản</div>
+                      <div>Xóa</div>
+                      <div>Ngừng sử dụng</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
 
-          <tr>
-            <td>
-              <input type="checkbox" class="table__checkbox"></input>
-            </td>
-            <td>000579</td>
-            <td>Lưu Thủy Bình</td>
-            <td>Nam</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Vận hành tại Hà Nội</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-              <button class="link-button">Sửa</button>
-              <div class="menu">
-                <div class="icon"></div>
-                <div class="menu__list">
-                  <div>Nhân bản</div>
-                  <div>Xóa</div>
-                  <div>Ngừng sử dụng</div>
-                </div>
-              </div>
-            </td>
-          </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="table__checkbox"></input>
+                </td>
+                <td>0012</td>
+                <td>Nguyễn Văn Liệt</td>
+                <td>Nam</td>
+                <td>31/12/1969</td>
+                <td>0362583203</td>
+                <td>Trưởng nhóm</td>
+                <td>Xay Keo - Phối trộn</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <button class="link-button">Sửa</button>
+                  <div class="menu">
+                    <div class="icon"></div>
+                    <div class="menu__list">
+                      <div>Nhân bản</div>
+                      <div>Xóa</div>
+                      <div>Ngừng sử dụng</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
 
-          <tr>
-            <td>
-              <input type="checkbox" class="table__checkbox"></input>
-            </td>
-            <td>0012</td>
-            <td>Nguyễn Văn Liệt</td>
-            <td>Nam</td>
-            <td>31/12/1969</td>
-            <td>0362583203</td>
-            <td>Trưởng nhóm</td>
-            <td>Xay Keo - Phối trộn</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-              <button class="link-button">Sửa</button>
-              <div class="menu">
-                <div class="icon"></div>
-                <div class="menu__list">
-                  <div>Nhân bản</div>
-                  <div>Xóa</div>
-                  <div>Ngừng sử dụng</div>
-                </div>
-              </div>
-            </td>
-          </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="table__checkbox"></input>
+                </td>
+                <td>000579</td>
+                <td>Lưu Thủy Bình</td>
+                <td>Nam</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Vận hành tại Hà Nội</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <button class="link-button">Sửa</button>
+                  <div class="menu">
+                    <div class="icon"></div>
+                    <div class="menu__list">
+                      <div>Nhân bản</div>
+                      <div>Xóa</div>
+                      <div>Ngừng sử dụng</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
 
-          <tr>
-            <td>
-              <input type="checkbox" class="table__checkbox"></input>
-            </td>
-            <td>000579</td>
-            <td>Lưu Thủy Bình</td>
-            <td>Nam</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Vận hành tại Hà Nội</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-              <button class="link-button">Sửa</button>
-              <div class="menu">
-                <div class="icon"></div>
-                <div class="menu__list">
-                  <div>Nhân bản</div>
-                  <div>Xóa</div>
-                  <div>Ngừng sử dụng</div>
-                </div>
-              </div>
-            </td>
-          </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="table__checkbox"></input>
+                </td>
+                <td>0012</td>
+                <td>Nguyễn Văn Liệt</td>
+                <td>Nam</td>
+                <td>31/12/1969</td>
+                <td>0362583203</td>
+                <td>Trưởng nhóm</td>
+                <td>Xay Keo - Phối trộn</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <button class="link-button">Sửa</button>
+                  <div class="menu">
+                    <div class="icon"></div>
+                    <div class="menu__list">
+                      <div>Nhân bản</div>
+                      <div>Xóa</div>
+                      <div>Ngừng sử dụng</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
 
-          <tr>
-            <td>
-              <input type="checkbox" class="table__checkbox"></input>
-            </td>
-            <td>0012</td>
-            <td>Nguyễn Văn Liệt</td>
-            <td>Nam</td>
-            <td>31/12/1969</td>
-            <td>0362583203</td>
-            <td>Trưởng nhóm</td>
-            <td>Xay Keo - Phối trộn</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-              <button class="link-button">Sửa</button>
-              <div class="menu">
-                <div class="icon"></div>
-                <div class="menu__list">
-                  <div>Nhân bản</div>
-                  <div>Xóa</div>
-                  <div>Ngừng sử dụng</div>
-                </div>
-              </div>
-            </td>
-          </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="table__checkbox"></input>
+                </td>
+                <td>000579</td>
+                <td>Lưu Thủy Bình</td>
+                <td>Nam</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Vận hành tại Hà Nội</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <button class="link-button">Sửa</button>
+                  <div class="menu">
+                    <div class="icon"></div>
+                    <div class="menu__list">
+                      <div>Nhân bản</div>
+                      <div>Xóa</div>
+                      <div>Ngừng sử dụng</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
 
-          <tr>
-            <td>
-              <input type="checkbox" class="table__checkbox"></input>
-            </td>
-            <td>000579</td>
-            <td>Lưu Thủy Bình</td>
-            <td>Nam</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Vận hành tại Hà Nội</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-              <button class="link-button">Sửa</button>
-              <div class="menu">
-                <div class="icon"></div>
-                <div class="menu__list">
-                  <div>Nhân bản</div>
-                  <div>Xóa</div>
-                  <div>Ngừng sử dụng</div>
-                </div>
-              </div>
-            </td>
-          </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="table__checkbox"></input>
+                </td>
+                <td>0012</td>
+                <td>Nguyễn Văn Liệt</td>
+                <td>Nam</td>
+                <td>31/12/1969</td>
+                <td>0362583203</td>
+                <td>Trưởng nhóm</td>
+                <td>Xay Keo - Phối trộn</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <button class="link-button">Sửa</button>
+                  <div class="menu">
+                    <div class="icon"></div>
+                    <div class="menu__list">
+                      <div>Nhân bản</div>
+                      <div>Xóa</div>
+                      <div>Ngừng sử dụng</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
 
-          <tr>
-            <td>
-              <input type="checkbox" class="table__checkbox"></input>
-            </td>
-            <td>0012</td>
-            <td>Nguyễn Văn Liệt</td>
-            <td>Nam</td>
-            <td>31/12/1969</td>
-            <td>0362583203</td>
-            <td>Trưởng nhóm</td>
-            <td>Xay Keo - Phối trộn</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-              <button class="link-button">Sửa</button>
-              <div class="menu">
-                <div class="icon"></div>
-                <div class="menu__list">
-                  <div>Nhân bản</div>
-                  <div>Xóa</div>
-                  <div>Ngừng sử dụng</div>
-                </div>
-              </div>
-            </td>
-          </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="table__checkbox"></input>
+                </td>
+                <td>000579</td>
+                <td>Lưu Thủy Bình</td>
+                <td>Nam</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Vận hành tại Hà Nội</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <button class="link-button">Sửa</button>
+                  <div class="menu">
+                    <div class="icon"></div>
+                    <div class="menu__list">
+                      <div>Nhân bản</div>
+                      <div>Xóa</div>
+                      <div>Ngừng sử dụng</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
 
-          <tr>
-            <td>
-              <input type="checkbox" class="table__checkbox"></input>
-            </td>
-            <td>000579</td>
-            <td>Lưu Thủy Bình</td>
-            <td>Nam</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Vận hành tại Hà Nội</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-              <button class="link-button">Sửa</button>
-              <div class="menu">
-                <div class="icon"></div>
-                <div class="menu__list">
-                  <div>Nhân bản</div>
-                  <div>Xóa</div>
-                  <div>Ngừng sử dụng</div>
-                </div>
-              </div>
-            </td>
-          </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="table__checkbox"></input>
+                </td>
+                <td>0012</td>
+                <td>Nguyễn Văn Liệt</td>
+                <td>Nam</td>
+                <td>31/12/1969</td>
+                <td>0362583203</td>
+                <td>Trưởng nhóm</td>
+                <td>Xay Keo - Phối trộn</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <button class="link-button">Sửa</button>
+                  <div class="menu">
+                    <div class="icon"></div>
+                    <div class="menu__list">
+                      <div>Nhân bản</div>
+                      <div>Xóa</div>
+                      <div>Ngừng sử dụng</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
 
-          <tr>
-            <td>
-              <input type="checkbox" class="table__checkbox"></input>
-            </td>
-            <td>0012</td>
-            <td>Nguyễn Văn Liệt</td>
-            <td>Nam</td>
-            <td>31/12/1969</td>
-            <td>0362583203</td>
-            <td>Trưởng nhóm</td>
-            <td>Xay Keo - Phối trộn</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-              <button class="link-button">Sửa</button>
-              <div class="menu">
-                <div class="icon"></div>
-                <div class="menu__list">
-                  <div>Nhân bản</div>
-                  <div>Xóa</div>
-                  <div>Ngừng sử dụng</div>
-                </div>
-              </div>
-            </td>
-          </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="table__checkbox"></input>
+                </td>
+                <td>000579</td>
+                <td>Lưu Thủy Bình</td>
+                <td>Nam</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Vận hành tại Hà Nội</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <button class="link-button">Sửa</button>
+                  <div class="menu">
+                    <div class="icon"></div>
+                    <div class="menu__list">
+                      <div>Nhân bản</div>
+                      <div>Xóa</div>
+                      <div>Ngừng sử dụng</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
 
-          <tr>
-            <td>
-              <input type="checkbox" class="table__checkbox"></input>
-            </td>
-            <td>000579</td>
-            <td>Lưu Thủy Bình</td>
-            <td>Nam</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Vận hành tại Hà Nội</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-              <button class="link-button">Sửa</button>
-              <div class="menu">
-                <div class="icon"></div>
-                <div class="menu__list">
-                  <div>Nhân bản</div>
-                  <div>Xóa</div>
-                  <div>Ngừng sử dụng</div>
-                </div>
-              </div>
-            </td>
-          </tr>
-        </table>
+              <tr>
+                <td>
+                  <input type="checkbox" class="table__checkbox"></input>
+                </td>
+                <td>0012</td>
+                <td>Nguyễn Văn Liệt</td>
+                <td>Nam</td>
+                <td>31/12/1969</td>
+                <td>0362583203</td>
+                <td>Trưởng nhóm</td>
+                <td>Xay Keo - Phối trộn</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <button class="link-button">Sửa</button>
+                  <div class="menu">
+                    <div class="icon"></div>
+                    <div class="menu__list">
+                      <div>Nhân bản</div>
+                      <div>Xóa</div>
+                      <div>Ngừng sử dụng</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <input type="checkbox" class="table__checkbox"></input>
+                </td>
+                <td>000579</td>
+                <td>Lưu Thủy Bình</td>
+                <td>Nam</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Vận hành tại Hà Nội</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <button class="link-button">Sửa</button>
+                  <div class="menu">
+                    <div class="icon"></div>
+                    <div class="menu__list">
+                      <div>Nhân bản</div>
+                      <div>Xóa</div>
+                      <div>Ngừng sử dụng</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Kết thúc table -->
 
         <div class="table__footer">
           <div class="table__footer--left">
@@ -734,7 +748,6 @@
               <div class="table__page-icon--backward"></div>
             </div>
 
-
           </div>
         </div>
 
@@ -746,120 +759,174 @@
     <div class="popup">
       <div class="popup__header">
         <h1>Đăng ký tài khoản</h1>
-        <img onclick="CancelPopup" src="/assets/icon/x.svg" alt="Thoát đăng ký tài khoản">
+        <div class="icon-container">
+          <div class="icon-x-black"></div>
+        </div>
+      </div>
+      <div class="popup__body">
+        <div class="popup__sub-body">
+          <div class="input">
+            <div class="input__label">
+              Mã <span class="required">*</span>
+            </div>
+            <div class="input__text">
+              <input class="input__text-field" type="text" placeholder="MF1609" required />
+            </div>
+          </div>
+
+          <div class="input">
+            <div class="input__label">
+              Tên <span class="required">*</span>
+            </div>
+            <div class="input__text">
+              <input class="input__text-field" type="text" required />
+            </div>
+          </div>
+
+          <div class="input">
+            <div class="input__label">
+              Đơn vị <span class="required">*</span>
+            </div>
+            <div class="input__text">
+              <input class="input__text-field" type="text" required />
+            </div>
+          </div>
+
+          <div class="input">
+            <div class="input__label">
+              Chức danh
+            </div>
+            <div class="input__text">
+              <input class="input__text-field" type="text" />
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="popup__sub-body">
+          <div class="input-date">
+            <div class="input__label">
+              Ngày sinh <span class="required">*</span>
+            </div>
+            <div class="input__text">
+              <input class="input__text-field" type="text" placeholder="dd/MM/yyyy" pattern="\d{2}/\d{2}/\d{4}" required />
+              <div class="icon-container">
+                <div class="icon-date"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="input">
+            <div class="input__label">
+              Giới tính
+            </div>
+            <label>
+              <input name="gender" type="radio" value="1" checked /> Nam
+            </label>
+            <label>
+              <input name="gender" type="radio" value="0" /> Nữ
+            </label>
+            <label>
+              <input name="gender" type="radio" value="2" /> Khác
+            </label>
+          </div>
+
+          <div class="input">
+            <div class="input__label">
+              Số CMND <span class="required">*</span>
+            </div>
+            <div class="input__text">
+              <input class="input__text-field" type="text" required />
+            </div>
+          </div>
+          <div class="input">
+            <div class="input__label">
+              Ngày cấp
+            </div>
+            <div class="input__text">
+              <input class="input__text-field" type="text" />
+            </div>
+          </div>
+
+          <div class="input">
+            <div class="input__label">
+              Nơi cấp
+            </div>
+            <div class="input__text">
+              <input class="input__text-field" type="text" />
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="popup__sub-body">
+          <div class="input">
+            <div class="input__label">
+              Địa chỉ
+            </div>
+            <div class="input__text">
+              <input class="input__text-field" type="text" />
+            </div>
+          </div>
+          <div class="input">
+            <div class="input__label">
+              ĐT di động
+            </div>
+            <div class="input__text">
+              <input class="input__text-field" type="text" />
+            </div>
+          </div>
+          <div class="input">
+            <div class="input__label">
+              ĐT cố định
+            </div>
+            <div class="input__text">
+              <input class="input__text-field" type="text" />
+            </div>
+          </div>
+          <div class="input">
+            <div class="input__label">
+              Email
+            </div>
+            <div class="input__text">
+              <input class="input__text-field" type="text" />
+            </div>
+          </div>
+          <div class="input">
+            <div class="input__label">
+              Tài khoản ngân hàng
+            </div>
+            <div class="input__text">
+              <input class="input__text-field" type="text" />
+            </div>
+          </div>
+          <div class="input">
+            <div class="input__label">
+              Tên ngân hàng
+            </div>
+            <div class="input__text">
+              <input class="input__text-field" type="text" />
+            </div>
+          </div>
+
+          <div class="input">
+            <div class="input__label">
+              Chi nhánh
+            </div>
+            <div class="input__text">
+              <input class="input__text-field" type="text" />
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="popup__text">
-        <div class="popup__text--label">
-          Mã nhân viên <span class="required">*</span>
-        </div>
-        <input class="popup__text--field" type="text" placeholder="MF1609" required />
-      </div>
-
-      <div class="popup__text">
-        <div class="popup__text--label">
-          Họ và tên <span class="required">*</span>
-        </div>
-        <input class="popup__text--field" type="text" required />
-      </div>
-
-      <div class="popup__text">
-        <div class="popup__text--label">
-          Ngày sinh <span class="required">*</span>
-        </div>
-        <input class="popup__text--field" type="date" placeholder="dd/MM/yyyy" required />
-      </div>
-
-      <div class="popup__text">
-        <div class="popup__text--label">
-          Giới tính
-        </div>
-        <label>
-          <input name="gender" type="radio" value="1" checked /> Nam
-        </label>
-        <label>
-          <input name="gender" type="radio" value="0" /> Nữ
-        </label>
-      </div>
-
-      <div class="popup__text">
-        <div class="popup__text--label">
-          Đơn vị <span class="required">*</span>
-        </div>
-        <input class="popup__text--field" type="text" required />
-      </div>
-      <div class="popup__text">
-        <div class="popup__text--label">
-          Số CMND
-        </div>
-        <input class="popup__text--field" type="text" />
-      </div>
-      <div class="popup__text">
-        <div class="popup__text--label">
-          Ngày cấp
-        </div>
-        <input class="popup__text--field" type="text" />
-      </div>
-      <div class="popup__text">
-        <div class="popup__text--label">
-          Chức danh
-        </div>
-        <input class="popup__text--field" type="text" />
-      </div>
-      <div class="popup__text">
-        <div class="popup__text--label">
-          Nơi cấp
-        </div>
-        <input class="popup__text--field" type="text" />
-      </div>
-      <div class="popup__text">
-        <div class="popup__text--label">
-          Địa chỉ
-        </div>
-        <input class="popup__text--field" type="text" />
-      </div>
-      <div class="popup__text">
-        <div class="popup__text--label">
-          ĐT di động
-        </div>
-        <input class="popup__text--field" type="text" />
-      </div>
-      <div class="popup__text">
-        <div class="popup__text--label">
-          ĐT cố định
-        </div>
-        <input class="popup__text--field" type="text" />
-      </div>
-      <div class="popup__text">
-        <div class="popup__text--label">
-          Email
-        </div>
-        <input class="popup__text--field" type="text" />
-      </div>
-      <div class="popup__text">
-        <div class="popup__text--label">
-          Tài khoản ngân hàng
-        </div>
-        <input class="popup__text--field" type="text" />
-      </div>
-      <div class="popup__text">
-        <div class="popup__text--label">
-          Tên ngân hàng
-        </div>
-        <input class="popup__text--field" type="text" />
-      </div>
-
-      <div class="popup__text">
-        <div class="popup__text--label">
-          Chi nhánh
-        </div>
-        <input class="popup__text--field" type="text" />
-      </div>
 
       <div class="popup__footer">
+        <button id="save-and-add" type="button" class="main-button">Cất và thêm</button>
+        <button id="save" type="button" class="extra-button">Cất</button>
         <button id="cancel" type="button" class="extra-button">Hủy</button>
-        <button id="save" class="extra-button">Cất</button>
-        <button id="save-and-add" class="main-button">Cất và thêm</button>
       </div>
 
     </div>

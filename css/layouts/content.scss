@@ -31,179 +31,146 @@
     margin: 15px 15px 0px 24px;
     border-radius: var(--border-radius);
     height: calc(100vh - 125px);
+    position: relative;
 
-    div {
-      &:has(.content__input--field) {
-        display: flex;
-        justify-content: flex-end;
-        position: relative;
-        padding: 15px;
-      }
-
-      .content__input--field {
-        width: 232px;
-        height: 2rem;
-        padding-left: 10px;
-        outline: none;
-        border-radius: var(--border-radius);
-        border-color: var(--border-input-color);
-        border-style: solid;
-
-        &::placeholder {
-          // font-style: italic;
-          font-size: 12px;
-        }
-
-        &:focus {
-          border-color: var(--color-light-green-500);
-          border-style: solid;
-        }
-
-      }
-
-      .icon {
-        &:nth-child(2) {
-          background: url("/Resource/img/Sprites.64af8f61.svg") no-repeat -316px -148px;
-          width: 17px;
-          height: 16px;
-          position: relative;
-          top: 6px;
-          left: -23px;
-
-          &:hover {
-            cursor: pointer;
-          }
-        }
-
-        &:nth-child(3) {
-          background: url("/Resource/img/Sprites.64af8f61.svg") no-repeat -425px -201px;
-          width: 21px;
-          height: 23px;
-          position: relative;
-          top: 2px;
-          left: 0px;
-
-          &:hover {
-            cursor: pointer;
-          }
-        }
-      }
+    >.input-search {
+      position: relative;
+      top: 8px;
+      left: calc(100% - 319px);
     }
 
-    table.table {
-      display: block;
-      margin: 5px 15px 15px 15px;
-      width: 99%;
-      overflow-y: scroll;
-      height: calc(100vh - 238px);
-      border-collapse: collapse;
+    >.icon-container {
+      position: absolute;
+      top: 14px;
+      left: calc(100% - 50px)
+    }
 
-      tr {
-        th {
-          font-size: 12px;
-          align-items: center;
+    .sticky-table {
+      position: relative;
+      overflow: auto;
+      border: 1px solid var(--border-input-color);
+      margin: 0px 15px 15px 15px;
+      height: calc(100vh - 258px);
 
-          &:nth-child(1) {
-            width: 10px;
-          }
+      table.table {
+        display: block;
 
-          &:nth-child(2) {
-            width: 85px;
-          }
+        thead tr {
+          th {
+            font-size: 12px;
+            align-items: center;
 
-          &:nth-child(3) {
-            width: 120px;
-          }
 
-          &:nth-child(4) {
-            width: 58px;
-          }
+            &:nth-child(1) {
+              min-width: 10px;
+            }
 
-          &:nth-child(5) {
-            width: 10px;
-          }
+            &:nth-child(2) {
+              min-width: 85px;
+            }
 
-          &:nth-child(6) {
-            width: 10px;
-          }
+            &:nth-child(3) {
+              min-width: 140px;
+            }
 
-          &:nth-child(7) {
-            width: 76px;
-          }
+            &:nth-child(4) {
+              min-width: 58px;
+            }
 
-          &:nth-child(8) {
-            width: 233px;
-          }
+            &:nth-child(5) {
+              min-width: 10px;
+            }
 
-          &:nth-child(9) {
-            width: 85px;
-          }
+            &:nth-child(6) {
+              min-width: 10px;
+            }
 
-          &:nth-child(10) {
-            width: 182px;
-          }
+            &:nth-child(7) {
+              min-width: 76px;
+            }
 
-          &:nth-child(11) {
-            width: 284px;
-          }
+            &:nth-child(8) {
+              min-width: 233px;
+            }
 
-          &:nth-child(12) {
-            width: 75px;
+            &:nth-child(9) {
+              min-width: 85px;
+            }
+
+            &:nth-child(10) {
+              min-width: 182px;
+            }
+
+            &:nth-child(11) {
+              min-width: 284px;
+            }
+
+            &:nth-child(12) {
+              min-width: 75px;
+            }
           }
         }
 
-        td {
-          font-size: 12px;
-          align-items: center;
-
-          .link-button {
-            background-color: rgba(0, 0, 0, 0);
-            border: none;
+        tbody tr {
+          &:hover {
+            background-color: #eeeeee;
           }
 
-          &:has(.link-button) {
-            display: flex;
-            position: relative;
-            border-top: none;
-            border-left: none;
+          td {
+            font-size: 12px;
+            align-items: center;
+            white-space: nowrap;
+            background-color: white;
 
-            .menu {
-              padding: 5px;
+            .link-button {
+              background-color: rgba(0, 0, 0, 0);
+              border: none;
+            }
 
-              .menu__list {
-                display: none;
-                position: absolute;
-                top: 38px;
-                left: 12px;
-                background-color: white;
-                border: 1px var(--border-input-color) solid;
-                z-index: 99;
+            &:has(.link-button) {
+              display: flex;
+              position: relative;
+              border-top: none;
+              border-left: none;
 
-                div {
-                  padding: 5px;
+              .menu {
+                padding: 5px;
 
-                  &:hover {
+                .menu__list {
+                  display: none;
+                  position: absolute;
+                  top: 38px;
+                  left: 12px;
+                  background-color: white;
+                  border: 1px var(--border-input-color) solid;
+                  z-index: 99;
+
+                  div {
+                    padding: 5px;
+
+                    &:hover {
+                      cursor: pointer;
+                      color: var(--color-light-green-500);
+                      background-color: var(--border-input-color);
+                    }
+                  }
+
+                }
+
+                &:hover {
+                  cursor: pointer;
+
+                  .menu__list {
                     cursor: pointer;
-                    color: var(--color-light-green-500);
-                    background-color: var(--border-input-color);
+                    display: block;
                   }
                 }
 
-              }
-
-              &:hover {
-                cursor: pointer;
-
-                .menu__list {
-                  cursor: pointer;
-                  display: block;
+                .icon {
+                  background: url("/Resource/img/Sprites.64af8f61.svg") no-repeat -564px -365px;
+                  width: 8px;
+                  height: 5px;
                 }
-              }
-
-              .icon {
-                background: url("/Resource/img/Sprites.64af8f61.svg") no-repeat -564px -365px;
-                width: 8px;
-                height: 5px;
               }
             }
           }

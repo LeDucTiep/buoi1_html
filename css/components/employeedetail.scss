@@ -11,101 +11,120 @@
         --popup-width: 862px;
         --popup-height: 690px;
 
-        .popup__text {
-            float: left;
+        .popup__body {
+            display: grid;
+            grid-template-columns: calc(50% - 12px) calc(50% - 12px);
+            gap: 24px;
+            background-color: white;
 
-            &:nth-child(2) {
-                width: 15%;
-                margin-right: 10px;
+            .popup__sub-body {
+                &:nth-child(1) {
+
+                    .input {
+                        &:nth-child(1) {
+                            float: left;
+                            --input-width: calc(var(--popup-width) - 720px);
+                            margin-right: 12px;
+                        }
+
+                        &:nth-child(2) {
+                            float: left;
+                            --input-width: calc(var(--popup-width) - 631px);
+                        }
+
+                        &:nth-child(3) {
+                            clear: both;
+                            --input-width: 100%;
+                        }
+
+                        &:nth-child(4) {
+                            --input-width: 100%;
+                        }
+                    }
+                }
+
+                &:nth-child(2) {
+
+                    .input,
+                    .input-date {
+                        &:nth-child(1) {
+                            float: left;
+                            --input-width: calc(var(--popup-width) - 720px);
+                            margin-right: 12px;
+                        }
+
+                        &:nth-child(2) {
+                            float: left;
+                            --input-width: calc(var(--popup-width) - 640px);
+                        }
+
+                        &:nth-child(3) {
+                            margin-right: 12px;
+                            float: left;
+                            --input-width: calc(var(--popup-width) - 654px);
+                        }
+
+                        &:nth-child(4) {
+                            float: left;
+                            --input-width: calc(var(--popup-width) - 696px);
+                        }
+
+                        &:nth-child(5) {
+                            clear: both;
+                            --input-width: 100%;
+                        }
+                    }
+                }
+
+                &:nth-child(3) {
+                    grid-column-end: span 2;
+
+                    .input {
+                        &:nth-child(1) {
+                            --input-width: 100%;
+                        }
+
+                        &:nth-child(2) {
+                            margin-right: 12px;
+                            float: left;
+                            --input-width: calc(var(--popup-width) - 654px);
+                        }
+
+                        &:nth-child(3) {
+                            margin-right: 12px;
+                            float: left;
+                            --input-width: calc(var(--popup-width) - 654px);
+                        }
+
+                        &:nth-child(4) {
+                            margin-right: 12px;
+                            float: left;
+                            --input-width: calc(var(--popup-width) - 654px);
+                        }
+
+                        &:nth-child(5) {
+                            margin-right: 12px;
+                            float: left;
+                            --input-width: calc(var(--popup-width) - 654px);
+                        }
+
+                        &:nth-child(6) {
+                            margin-right: 12px;
+                            float: left;
+                            --input-width: calc(var(--popup-width) - 654px);
+                        }
+
+                        &:nth-child(7) {
+                            margin-right: 12px;
+                            float: left;
+                            --input-width: calc(var(--popup-width) - 654px);
+                        }
+
+                    }
+                }
             }
-
-            &:nth-child(3) {
-                width: 25%;
-                margin-left: 0px;
-                margin-right: 10px;
-            }
-
-            &:nth-child(4) {
-                width: 20%;
-                margin-left: 0px;
-                margin-right: 10px;
-            }
-
-            &:nth-child(5) {
-                width: 25%;
-                margin: 10px 0px 16px 10px;
-            }
-
-            &:nth-child(6) {
-                width: calc(40% + 10px);
-
-                margin-right: 10px;
-            }
-
-            &:nth-child(7) {
-                width: 31%;
-                margin-left: 0px;
-                margin-right: 10px;
-            }
-
-            &:nth-child(8) {
-                width: 20%;
-                margin-left: 0px;
-                margin-right: 10px;
-            }
-
-            &:nth-child(9) {
-                width: calc(40% + 10px);
-                margin-right: 10px;
-            }
-
-            &:nth-child(10) {
-                width: calc(51% + 10px);
-                margin-left: 0px;
-                margin-right: 10px;
-            }
-
-            &:nth-child(11) {
-
-                margin-right: 10px;
-            }
-
-            &:nth-child(12) {
-                width: 25%;
-                margin-right: 10px;
-            }
-
-            &:nth-child(13) {
-                width: 25%;
-                margin-left: 0px;
-                margin-right: 10px;
-            }
-
-            &:nth-child(14) {
-                width: 25%;
-                margin-left: 0px;
-                margin-right: 10px;
-            }
-
-            &:nth-child(15) {
-                width: 25%;
-                margin-right: 10px;
-            }
-
-            &:nth-child(16) {
-                width: 25%;
-                margin-left: 0px;
-                margin-right: 10px;
-            }
-
-            &:nth-child(17) {
-                width: 25%;
-                margin-left: 0px;
-                margin-right: 10px;
-            }
-
-
         }
+
 
         .popup__footer {
 
